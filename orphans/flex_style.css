@@ -1,0 +1,35 @@
+.container {
+  color: white;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.container > * {
+  flex-basis: 150px;
+}
+
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  color: black;
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.indigo {
+  background-color: indigo;
+}
+
+.violet {
+  background-color: violet;
+}
