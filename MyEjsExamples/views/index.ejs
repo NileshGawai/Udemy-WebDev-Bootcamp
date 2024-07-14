@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJS Exercises</title>
+
+    <style>
+      body {
+        display: block;
+        justify-content: center;
+      }
+      div {
+        width: 350px;
+        height: 160px;
+        padding: 15px;
+        background-color: lightyellow;
+        border: 1px solid gray;
+        border-radius: 15px;
+      }
+
+        li {
+          position: relative;
+          left: -20px;
+          /* list-style-type: none; */
+          font-size: larger;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <div><h3>Seconds: <%= seconds %></h3>
+
+    <% if(seconds % 2 ===0) { %>
+    <ul>
+      <%# Note: the use of 'locals' to pass the data%>
+        <% locals.items.forEach(element => { %>
+            <li> <span><%= element %></span> </li>
+        <%}); %>
+    </ul>
+
+    <% } else { %>
+    <p>No items to display.</p>
+    <% } %>
+    </div>
+
+    <p><%- htmlContent %></p>
+
+
+    <%- include("footer.ejs"); %>
+  </body>
+</html>

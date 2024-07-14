@@ -1,0 +1,20 @@
+{
+  "name": "myejsexamples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ejs",
+    "js"
+  ],
+  "author": "Nilesh Gawai",
+  "license": "ISC",
+  "description": "My EJS Examples with Express JS.",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
